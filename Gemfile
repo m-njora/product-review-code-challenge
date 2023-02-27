@@ -8,5 +8,5 @@ gem "sqlite3"
 gem "pry"
 gem "require_all"
 gem "rake"
-
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
 # gem "rails"
