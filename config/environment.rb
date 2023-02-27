@@ -1,10 +1,6 @@
-require 'bundler'
-Bundler.require 'bundler
+ENV["RACK_ENV"] ||= "development"
 
+require 'bundler/setup'
+Bundler.require(:default, ENV["RACK_ENV"])
 
-ActiveRecord::Base.establish_connection(
-    adapter:'sqlite3',
-    database: 'db/development.db'
-)
-
-require _all 'app'
+require_all 'app'
