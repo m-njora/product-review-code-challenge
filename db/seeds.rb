@@ -13,6 +13,7 @@ puts "🌱 Seeding data..."
     # create between 1 and 3 users for each product
     user = User.create(
         name: Faker::Artist.name
+        email: Faker::Internet.email
     )
 # create between 1 and 5 reviews for each product
     rand(1..5).times do
